@@ -11,7 +11,7 @@ internal static class Program
     internal static int Main(string[] args)
     {
         Console.Write(HEADER_TEXT);
-        Console.Write($"Base path: {Lib.ConsoleUtils.GetBaseDirectory()}");
+        Console.Write($"Base path: {Lib.ConsoleUtils.GetBaseDirectory()}\n");
 
         if (args.Length == 1 && args[0] == "--version")
         {
