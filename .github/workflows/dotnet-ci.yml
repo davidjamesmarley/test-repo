@@ -34,6 +34,8 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Pack
       run: dotnet pack --configuration Release
+    - name: Source
+      run: dotnet nuget add source --username davidjamesmarley --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/davidjamesmarley/index.json"
     - name: Pub
       run: dotnet nuget push "bin/Release/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
     
