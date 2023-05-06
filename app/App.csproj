@@ -5,6 +5,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <PackageId>App</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>David James Marley</Authors>
+    <Company>David James Marley</Company>
+    <PackageDescription>This is a test package</PackageDescription>
+    <RepositoryUrl>https://github.com/davidjamesmarley/test-repo</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
