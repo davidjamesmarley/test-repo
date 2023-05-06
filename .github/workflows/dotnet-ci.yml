@@ -5,14 +5,14 @@ name: CI
 
 on:
   workflow_dispatch:
-  push:
-    branches: 
-    - main
-    - release/*
-  pull_request:
-    branches: 
-    - main
-    - release/*
+  #push:
+  #  branches: 
+  #  - main
+  #  - release/*
+  #pull_request:
+  #  branches: 
+  #  - main
+  #  - release/*
   
 jobs:
   build:
